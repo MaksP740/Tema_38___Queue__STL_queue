@@ -1,12 +1,18 @@
 #include <string>
 #include <iostream>
 
-#ifndef TEMA_38___QUEUE__STL_QUEUE_MUSIC_H
-#define TEMA_38___QUEUE__STL_QUEUE_MUSIC_H
-
 
 class Music {
+    std::string name;
+    std::string autor;
+    int year;
+public:
+    Music(std::string name, std::string autor, int year);
+
+    std::string getName() const;
+    std::string getAutor() const;
+    int getYear() const;
+
+
 };
 
-
-#endif //TEMA_38___QUEUE__STL_QUEUE_MUSIC_H
