@@ -1,8 +1,10 @@
-//
-// Created by MacBook_Air_Maks on 19.05.2026.
-//
-
 #include "Music.h"
+
+Music::Music() {
+    name = "Не відомо";
+    autor = "Не відомо";
+    year = 0;
+}
 
 Music::Music(std::string name, std::string autor, int year) {
     this->name = name;
