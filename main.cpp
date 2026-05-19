@@ -45,6 +45,15 @@ int main() {
     play.push_back(folder[rand() % folder.size()]);
     play.push_back(folder[rand() % folder.size()]);
 
+    while (!play.isEmpty()) {
+        Music item = play.first();
+        cout << item.getName() << endl;
+        cout << item.getAutor() << endl;
+        cout << item.getYear() << endl;
+        play.pop_front();
+        cout << endl;
+    }
+
 
 
 
